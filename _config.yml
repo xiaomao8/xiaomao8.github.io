@@ -1,52 +1,14 @@
-﻿# title: 我的博客
-# theme: jekyll-theme-minimal
-# url: "https://xiaomao8.github.io"  # 必须添加
-
-# # GitHub Pages 专用配置
-# github:
-#   repository: "xiaomao8/xiaomao8.github.io"
-  
-# # 环境配置
-# is_user_page: true
-# is_project_page: false
-
-# # 构建优化
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - vendor
-
-# 基础配置
 title: 我的博客
-url: "https://xiaomao8.github.io"  # 必须包含协议头
-baseurl: ""  # 用户页必须留空
-
-# 主题配置
-remote_theme: mmistakes/minimal-mistakes@4.24.0  # 替换原 theme 配置
+url: "https://xiaomao8.github.io"
+description: A minimal Jekyll blog with Minimal Mistakes
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-include-cache
 
-# GitHub Pages 专用
-github:
-  repository: xiaomao8/xiaomao8.github.io  # 格式必须为 "用户名/仓库名"
+markdown: kramdown
+highlighter: rouge
 
-# 构建优化
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - .jekyll-cache
-  - .sass-cache
-
-# 可选功能
-minimal_mistakes:
-  skin: default  # 主题皮肤（可选：default, air, aqua, contrast等）
-  locale: "zh-CN"  # 中文支持
-
-sass:
-  style: compressed
-  load_paths:
-    - _sass
-    - "{{ bundle show minimal-mistakes-jekyll }}/_sass"  # 动态路径
+permalink: /:categories/:title/
