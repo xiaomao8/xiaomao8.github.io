@@ -14,7 +14,7 @@ plugins:
 sass:
   style: compressed
 
-# 如果你想给文章加默认布局，可保留这段
+# 默认 layout 设置
 defaults:
   - scope:
       path: ""
@@ -25,6 +25,7 @@ defaults:
       read_time: true
       comments: true
 
+# 导航菜单
 navigation:
   main:
     - title: "首页"
@@ -35,3 +36,10 @@ navigation:
       url: /tags/
     - title: "关于"
       url: /about/
+
+# ✅ 正确缩进的 collections
+collections:
+  pages:
+    output: true
+
+

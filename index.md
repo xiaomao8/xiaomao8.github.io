@@ -1,4 +1,4 @@
-﻿---
+---
 layout: home
 title: 欢迎访问
 author_profile: true
