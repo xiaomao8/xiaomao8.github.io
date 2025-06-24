@@ -42,4 +42,13 @@ collections:
   pages:
     output: true
 
+author:
+  avatar : "/assets/img/logo.png"  # 放头像的路径
+  name   : "你的名字"
+  bio    : "你的个人简介，一句话介绍自己。"
+  location: "中国·江苏·南京"
+  github : xiaomao8
+  email  : abb2138415172@gmail.com
+
+
 
