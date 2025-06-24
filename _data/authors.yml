@@ -1,7 +1,7 @@
 default:
-  name: "你的名字"
-  avatar: "/assets/img/logo.png"
-  bio: "一句介绍自己"
+  name: "Xiaomaowu"
+  avatar: "/assets/img/2d40bb1f6d470d0be59595ae80eb3a1d.jpeg"
+  bio: "一个初学程序的萌新"
   location: "中国·江苏·南京"
   email: "你的邮箱"
   github: "xiaomao8"
@@ -19,6 +19,12 @@ default:
     - label : "YouTube"
       icon: "fab fa-youtube"
       url : "https://www.youtube.com/@bugrashith6693"
+    
+    - label : "Email"
+      icon : "fas fa-envelope"
+      url : "https://abc2138415172@gmail.com"
+ 
+
 
 
 
