@@ -75,3 +75,12 @@
   font-size: 20px;
 }
 
+.author__avatar img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  image-rendering: auto;
+}
+
+
+
