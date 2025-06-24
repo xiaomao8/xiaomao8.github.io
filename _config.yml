@@ -4,6 +4,8 @@ baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+author: default
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -24,6 +26,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
+      css: "/assets/css/custom.css"
 
 # 导航菜单
 navigation:
@@ -42,13 +45,6 @@ collections:
   pages:
     output: true
 
-author:
-  avatar : "/assets/img/logo.png"  # 放头像的路径
-  name   : "你的名字"
-  bio    : "你的个人简介，一句话介绍自己。"
-  location: "中国·江苏·南京"
-  github : xiaomao8
-  email  : abb2138415172@gmail.com
 
 
-
+  

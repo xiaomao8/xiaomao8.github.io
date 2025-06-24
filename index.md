@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: 欢迎访问
 author_profile: true
 permalink: /
@@ -15,4 +15,5 @@ permalink: /
     <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
 

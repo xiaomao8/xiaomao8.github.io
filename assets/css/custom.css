@@ -1,0 +1,77 @@
+/* ✅ 修复 SVG 图标过大 */
+.author__urls .social-link img,
+.author__urls .social-link i {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 6px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.author__urls .social-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* ✅ 避免全局 img, svg 样式干扰 SVG 图标 */
+/* 所有在作者资料区使用的 svg 图标统一限制大小 */
+.author__urls img[src$=".svg"] {
+  width: 22px !important;
+  height: 22px !important;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.author__urls i.fa-github {
+  font-size: 22px; /* 默认是大概16px，你可以调成 22px 或 24px 更协调 */
+  margin-right: 8px;
+}
+
+.author__urls .label {
+  font-size: 22px;
+}
+
+/* 通用图标和文字间距优化 */
+.author__urls i,
+.author__urls img {
+  margin-right: 22px !important;  /* 原来可能是 6px，调成 10px 更自然 */
+  vertical-align: middle;
+}
+
+/* 可选：调高每一项之间的上下间距 */
+.author__urls li {
+  margin-bottom: 18px;
+}
+
+/* 可选：统一字体大小和对齐 */
+.author__urls .label {
+  font-size: 18px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+
+.author__urls li a i {
+  font-size: 18px;
+  line-height: 1;
+  position: relative;
+  top: 3px; /* 微调垂直位置 */
+  vertical-align: middle;
+}
+
+
+
+.author__urls li i.fa-map-marker-alt {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.author__urls li span.p-locality {
+  font-size: 20px;
+}
+

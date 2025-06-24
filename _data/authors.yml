@@ -1,0 +1,26 @@
+default:
+  name: "你的名字"
+  avatar: "/assets/img/logo.png"
+  bio: "一句介绍自己"
+  location: "中国·江苏·南京"
+  email: "你的邮箱"
+  github: "xiaomao8"
+  bilibili: "601120211"
+  youtube : "@bugrashith6693"
+  links:
+    - label: "Bilibili"
+      icon: "/assets/icons/bilibili.svg"
+      url: "https://space.bilibili.com/601120211"
+
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/xiaomao8"
+
+    - label : "YouTube"
+      icon: "fab fa-youtube"
+      url : "https://www.youtube.com/@bugrashith6693"
+
+
+
+
+
