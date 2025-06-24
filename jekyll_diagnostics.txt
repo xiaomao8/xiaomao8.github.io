@@ -1,0 +1,6 @@
+﻿### 诊断报告：
+1. SCSS 文件存在: False
+2. 生成 CSS 存在: False
+3. Jekyll 版本: jekyll 4.3.4
+4. Ruby 版本: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x64-mingw-ucrt]
+5. 主题路径: E:/my-github-blog/xiaomao8.github.io/vendor/bundle/ruby/3.2.0/gems/minimal-mistakes-jekyll-4.27.1

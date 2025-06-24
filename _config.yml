@@ -1,16 +1,37 @@
-title: 我的博客
+﻿title: 我的博客
 url: "https://xiaomao8.github.io"
+baseurl: ""
 
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-description: A minimal Jekyll blog with Minimal Mistakes
-theme: minimal-mistakes-jekyll
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
-markdown: kramdown
-highlighter: rouge
+sass:
+  style: compressed
 
-permalink: /:categories/:title/
+# 如果你想给文章加默认布局，可保留这段
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+
+navigation:
+  main:
+    - title: "首页"
+      url: /
+    - title: "文章分类"
+      url: /categories/
+    - title: "标签"
+      url: /tags/
+    - title: "关于"
+      url: /about/

@@ -1,10 +1,11 @@
-source "https://rubygems.org"
+﻿source 'https://rubygems.org'
+gem "jekyll", "~> 4.2.2"
 
-gem "jekyll", "~> 4.3.2"
-gem "minimal-mistakes-jekyll", "~> 4.24.0"
 
-# 插件依赖（也需要在_config.yml中声明）
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "jekyll-include-cache"
+gem "jekyll-seo-tag", "~> 2.8"
+
+gem "minimal-mistakes-jekyll", "~> 4.27"
+
+gem "jekyll-remote-theme", "~> 0.4.1"
+
+gem "webrick", "~> 1.9"

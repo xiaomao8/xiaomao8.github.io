@@ -1,0 +1,17 @@
+﻿title: 我的博客
+theme: jekyll-theme-minimal
+url: "https://xiaomao8.github.io"  # 必须添加
+
+# GitHub Pages 专用配置
+github:
+  repository: "xiaomao8/xiaomao8.github.io"
+  
+# 环境配置
+is_user_page: true
+is_project_page: false
+
+# 构建优化
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
