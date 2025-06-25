@@ -180,10 +180,24 @@ git push -u origin main
 
 ### 四、使用Jekyll来部署你的个人主页
 
-**注意，接下来的步骤的前提是你已经部署好的Jekyll的环境了，如果你还没有部署**
+**注意，接下来的步骤的前提是你已经部署好了Jekyll的环境了，如果你还没有部署**
 **请看我的[配置Jekyll环境](https://xiaomaowu.github.io/教程/jekyll/2025/06/24/my-blog-in-ruby-jekyll.html)**
 
+#### 1:搭建框架
 
+进入你的项目文件夹，右键选择用终端(Powershell)打开
+
+或者是直接打开Powershell输入
+
+{% highlight bash %}
+cd 你的项目文件夹路径
+{% endhighlight %}
+
+在项目文件夹内初始化你的项目
+
+{% highlight bash %}
+jekyll new 你的项目名称
+{% endhighlight %}
 
 <!-- {% highlight bash %}
 gem install jekyll bundler
