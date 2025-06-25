@@ -178,6 +178,13 @@ git push -u origin main
 
 如你完成了以上步骤，恭喜你，你已经成功建立了由GitHub Page托管的个人主页了
 
+### 四、使用Jekyll来部署你的个人主页
+
+**注意，接下来的步骤的前提是你已经部署好的Jekyll的环境了，如果你还没有部署**
+**请看我的[配置Jekyll环境](https://xiaomaowu.github.io/教程/jekyll/2025/06/24/my-blog-in-ruby-jekyll.html)**
+
+
+
 <!-- {% highlight bash %}
 gem install jekyll bundler
 {% endhighlight %} -->
