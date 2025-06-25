@@ -53,6 +53,8 @@ read_time: true
 
 ### 三、如何使用GitHub Page托管来做一个自己的博客
 
+**注意！接下来所有教程都建立在你已经拥有GitHub账户的基础上，如果没有请先注册一个**
+
 #### 1：打开[GitHub Pages](https://pages.github.com/)，直接点击GitHub repository
 
 点击右上角的+号，新建一个仓库(New repository)
@@ -117,7 +119,13 @@ read_time: true
 
 提交完之后，我们点击上面的推送或主页显示的推送
 
-![]()
+![](/assets/img/1750817056232.png)
+
+推送完成之后，我们可以在仓库的这里看到我们的上传历史记录
+
+![](/assets//img/1750817402102.png)
+
+最后，打开你的用户名.github.io，就可以看到Hello World了
 
 如上面步骤全部完成，恭喜你，你已经成功建立了由GitHub Page托管的主页了
 
@@ -157,6 +165,18 @@ git clone 你刚刚在上面复制下来的仓库链接
 cd 你的用户名.github.io
 echo “Hello World” > index.html
 {% endhighlight %}
+
+创建完毕后，我们来进行提交和推送，输入以下命令
+
+{% highlight bash %}
+git add --all
+git commit -m “初始提交”
+git push -u origin main
+{% endhighlight %}
+
+稍等一会，输入你的用户名.github.io，就可以看到Hello World
+
+如你完成了以上步骤，恭喜你，你已经成功建立了由GitHub Page托管的个人主页了
 
 <!-- {% highlight bash %}
 gem install jekyll bundler
