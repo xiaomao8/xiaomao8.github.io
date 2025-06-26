@@ -80,14 +80,14 @@ ruby -v
 
 **接下来我们需要给ruby换源，因为ruby默认的源是国外网站，从国外网站下载会很慢，所有我们需要把他的源换为国内源**
 
-输入以下代码
+输入命令
 
 {% highlight bash %}
 gem sources add https://gems.ruby-china.com/ 
 gem sources remove https://rubygems.org/
 {% endhighlight %}
 
-然后输入以下代码验证是否已经把源换成了国内源
+然后输入命令验证是否已经把源换成了国内源
 
 {% highlight bash %}
 gem sources -l
@@ -105,7 +105,7 @@ https://gems.ruby-china.com/
 
 #### 2.我们开始安装Jekyll
 
-输入以下命令
+输入命令
 
 {% highlight bash %}
 gem install jekyll
@@ -116,15 +116,15 @@ gem install jekyll
 
 ![](/assets/img/1750842234657.png)
 
-输入以下命令修复DevKit包
+输入命令修复DevKit包
 
 {% highlight bash %}
-rick install
+ridk install
 {% endhighlight %}
 
 跟之前一样选择1,3
 
-修复完之后重新输入以下命令
+修复完之后重新输入命令
 
 {% highlight bash %}
 gem install jekyll

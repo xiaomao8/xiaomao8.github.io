@@ -183,7 +183,7 @@ git push -u origin main
 **注意，接下来的步骤的前提是你已经部署好了Jekyll的环境了，如果你还没有部署**
 **请看我的[配置Jekyll环境](https://xiaomaowu.github.io/教程/jekyll/2025/06/24/my-blog-in-ruby-jekyll.html)**
 
-#### 1:搭建框架
+#### 1.搭建框架
 
 进入你的项目文件夹，右键选择用终端(Powershell)打开
 
@@ -202,3 +202,165 @@ jekyll new 你的项目名称
 <!-- {% highlight bash %}
 gem install jekyll bundler
 {% endhighlight %} -->
+
+如果在初始化项目的过程中出现了一直卡在这段的情况
+
+![](/assets/img/1750911446161.png)
+
+那么我们就先Ctrl+C终止我们的初始化进程
+
+来输入命令跳过他的自动bundle install
+
+{% highlight bash %}
+jekyll new 你自己的项目名称 --skip-bundle --fource
+cd my-site
+bundle install  # 手动安装依赖
+{% endhighlight %}
+
+**为什么会出现这种情况呢?**
+
+因为他自动引用国外的网站配置依赖，如果网不好的话或者是因为国内的防火墙都会导致他压根连不上国外的网站导致他需要连接国外源的时候配置的时候压根连接不上导致卡死
+
+完成之后呢，应该能在我们项目名称的文件夹下看到以下几个文件
+
+{% highlight bash %}
+_config.yml
+Gemfile
+index.md
+about.md
+_posts/
+{% endhighlight %}
+
+为了确认他是否安装成功我们输入命令
+
+{% highlight bash %}
+bundle exec jekyll serve
+{% endhighlight %}
+
+如果他显示这样子就代表他搭建成功了,出现的警告可以不用管，要是想消除后面会说
+
+![](/assets/img/1750912061612.png)
+
+接下来，我们来验证他是否初始化，我们按住Ctrl点击这个127.0.0.1:4000这个网址
+
+![](/assets/img/1750912139362.png)
+
+显示出来了这个初始页面就说明初始化成功了，接下来我们需要构建html发布网页,输入命令
+
+{% highlight bash %}
+bundle exec jekyll build
+{% endhighlight %}
+
+只要没弹Error或者一大堆英文就代表构建成功了，接下来我们来使用当下最受欢迎的自定义模板来建我们的个人博客
+
+#### 2.套用模板
+
+好的，现在我们已经初始化成功了，现在来套用当下最受欢迎的Minimal Mistakes开源模板来自定义我们的主页
+
+[项目仓库和示例文档链接](https://github.com/mmistakes/mm-github-pages-starter)
+
+**套用有两种方法，我这里只展示本地套用，适用于网络不好的用户**
+
+把他项目里面的文件克隆到本地
+
+{% highlight bash %}
+git clone https://github.com/mmistakes/minimal-mistakes.git
+{% endhighlight %}
+
+然后把这个文件夹克隆到本地，打开他的文件夹复制这四个文件进入你的项目文件夹
+
+{% highlight bash %}
+├── _includes/     ← 从 minimal-mistakes 复制
+├── _layouts/      ← 从 minimal-mistakes 复制
+├── _sass/         ← 从 minimal-mistakes 复制
+├── assets/        ← 从 minimal-mistakes 复制
+{% endhighlight %}
+
+然后我们需要修改_config,找到根目录的_config文件使用VsCode打开
+
+把他原来全部删除，添加以下的行
+
+{% highlight bash %}
+title: "我的博客"
+email: "your-email@example.com"
+description: >-
+  这是一个用 Minimal Mistakes 搭建的博客，支持本地部署，无需依赖网络。
+baseurl: ""  # 留空，表示部署到根路径
+url: "http://localhost:4000"  # 本地测试地址
+
+repository: 你的仓库名/你的仓库名.github.io  # 可选，如果将来部署到 GitHub Pages
+
+# 不用 remote_theme，也不用 theme，使用本地主题文件夹
+# theme: minima
+# remote_theme: mistakes/minimal-mistakes
+
+# 插件设置
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# 启用语言、导航等功能（Minimal Mistakes 支持）
+locale: zh-CN
+minimal_mistakes_skin: "default" # 可选皮肤名，例如 dark, air, neon
+markdown: kramdown
+highlighter: rouge
+
+# 导航菜单示例（可根据你的实际页面调整）
+nav:
+  - title: "首页"
+    url: /
+  - title: "关于"
+    url: /about/
+
+# 作者信息（可在页面中引用）
+author:
+  name   : "你的名字"
+  avatar : "/assets/images/avatar.png"
+  bio    : "这里写简介，比如：程序员，写博客，爱开源。"
+  location: "China"
+{% endhighlight %}
+
+**自己按需修改**
+
+然后在Gemfile里面添加这四行，如果打开的时候让你选择怎么打开直接选择使用记事本打开
+
+{% highlight bash %}
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-include-cache"
+gem "webrick", "~> 1.7" 
+{% endhighlight %}
+
+添加完之后直接
+
+{% highlight bash %}
+bundle install
+{% endhighlight %}
+
+如果一直卡着，大概率就是网络导致的，这时候我们来修改他的镜像源
+
+{% highlight bash %}
+bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+{% endhighlight %}
+
+然后重新安装
+
+{% highlight bash %}
+bundle install
+{% endhighlight %}
+
+安装完之后运行
+
+{% highlight bash %}
+bundle exec jekyll serve
+{% endhighlight %}
+
+按Ctrl点击网页
+
+如果显示这样就代表成功了
+
+![](/assets/img/1750918718579.png)
+
+这样子我们的基础搭建就完成了，接下来的篇章我们会讲如何使用这个minimal-mistakes来自定义自己的个人博客
