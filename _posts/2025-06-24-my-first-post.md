@@ -10,7 +10,9 @@ toc_sticky: true   # ✅ 目录固定在侧边栏
 toc_label: "目录"  # ✅ 可自定义标题，如 Table of Contents
 toc_icon: "list-ul"
 comments: true     # ✅ 如果你开启了评论系统
-read_time: true
+read_time: true    #显示时间
+header:
+  overlay_image: /assets/images/logo.jpg
 ---
 
 > ✨ 这篇文章教大家如何搭建一个由GitHub Page托管的博客
@@ -70,6 +72,7 @@ read_time: true
 
 #### 2：使用GitHub Desktop这个软件来克隆我们已经创建好的项目
 
+[GitHub Desktop下载链接](https://desktop.github.com/download/)
 
 首先，点击文件，找到克隆在线仓库，点第三个网址克隆
 
