@@ -27,6 +27,11 @@ defaults:
       read_time: true
       comments: true
       css: "/assets/css/custom.css"
+      header:
+        teaser: /assets/img/logo.png  # 默认 teaser，如果文章没设置
+
+paginate: 5
+paginate_path: "/page:num/"
 
 # 导航菜单
 navigation:
@@ -40,10 +45,17 @@ navigation:
     - title: "关于"
       url: /about/
 
+
+
 # ✅ 正确缩进的 collections
 collections:
   pages:
     output: true
+
+    
+
+
+
 
 
 

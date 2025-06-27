@@ -12,7 +12,7 @@ toc_icon: "list-ul"
 comments: true     # ✅ 如果你开启了评论系统
 read_time: true    #显示时间
 header:
-  overlay_image: /assets/images/logo.jpg
+  teaser: /assets/img/logo.png    
 ---
 
 > ✨ 这篇文章教大家如何搭建一个由GitHub Page托管的博客
@@ -183,8 +183,8 @@ git push -u origin main
 
 ### 四、使用Jekyll来部署你的个人主页
 
-**注意，接下来的步骤的前提是你已经部署好了Jekyll的环境了，如果你还没有部署**
-**请看我的[配置Jekyll环境](https://xiaomaowu.github.io/教程/jekyll/2025/06/24/my-blog-in-ruby-jekyll.html)**
+>**注意，接下来的步骤的前提是你已经部署好了Jekyll的环境了，如果你还没有部署**
+>**请看我的[配置Jekyll环境](https://xiaomaowu.github.io/教程/jekyll/2025/06/24/>my-blog-in-ruby-jekyll.html)**
 
 #### 1.搭建框架
 

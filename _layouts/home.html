@@ -2,7 +2,7 @@
 layout: archive
 ---
 
-{{ content }}
+<!-- {{ content }} -->
 
 <!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3> -->
 
@@ -18,11 +18,36 @@ layout: archive
   {% include documents-collection.html entries=posts type=entries_layout %}
 </div> -->
 
-<div class="entries-grid">
+<!-- <div class="entries-grid">
     {% for post in site.posts %}
       {% include archive-single.html %}
     {% endfor %}
   </div>
 
 
+  {% include archive-single.html type="grid" %} -->
+
 <!-- {% include paginator.html %} -->
+
+
+<div class="home">
+
+  {{ content }}
+
+  {% assign entries_layout = page.entries_layout | default: 'grid' %}
+
+  {% if paginator %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  <div class="entries-{{ entries_layout }}">
+    {% for post in posts %}
+    {% include archive-single.html type="horizontal" %}
+    {% endfor %}
+  </div>
+
+  {% include paginator.html %}
+
+</div>

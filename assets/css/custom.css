@@ -63,24 +63,99 @@
 
 
 
-.author__urls li i.fa-map-marker-alt {
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  margin-right: 6px;
-  vertical-align: middle;
+.horizontal__item .archive__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.author__urls li span.p-locality {
-  font-size: 20px;
+.horizontal__item .archive__item-teaser {
+  flex: 0 0 40%;
+  max-width: 40%;
+  height: 180px;
+  overflow: hidden;
 }
 
-.author__avatar img {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  image-rendering: auto;
+.horizontal__item .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+.horizontal__item .archive__item-title,
+.horizontal__item .archive__item-excerpt {
+  margin: 0.5rem 1rem;
+}
+
+.horizontal__item .archive__item-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.horizontal__item .archive__item-excerpt {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.archive__item.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  min-height: 160px; /* 控制卡片高度 */
+}
+
+.archive__item.horizontal .archive__item-teaser {
+  flex: 0 0 220px;
+  max-width: 220px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.archive__item.horizontal .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.archive__item.horizontal .archive__item-content {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 上下对齐 */
+}
+
+.archive__item.horizontal .archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.archive__item.horizontal .page__meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.archive__item.horizontal .archive__item-excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: auto; /* 推到底部 */
+}
+
 
 
 
