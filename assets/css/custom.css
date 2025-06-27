@@ -156,6 +156,52 @@
   margin-top: auto; /* 推到底部 */
 }
 
+.horizontal__item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
 
+.horizontal__item .archive__item-teaser {
+  flex: 0 0 220px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.horizontal__item .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal__item .archive__item {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal__item .archive__item-title {
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.horizontal__item .page__meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.horizontal__item .archive__item-excerpt {
+  font-size: 0.95rem;
+  color: #444;
+}
 
 
