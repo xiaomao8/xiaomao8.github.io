@@ -90,7 +90,7 @@ header:
 
 进入你的项目文件夹中，添加一个txt格式文本，双击文本复制粘贴以下代码
 
-{% highlight bash %}
+{% highlight csharp %}
 
 <!DOCTYPE html>
 <html>
@@ -154,7 +154,7 @@ header:
 
 打开终端之后，我们输入以下命令
 
-{% highlight bash %}
+{% highlight bash  %}
 git clone 你刚刚在上面复制下来的仓库链接
 {% endhighlight %}
 
@@ -164,14 +164,14 @@ git clone 你刚刚在上面复制下来的仓库链接
 
 接下来我们创建一个初始网页,输入以下命令
 
-{% highlight bash %}
+{% highlight bash  %}
 cd 你的用户名.github.io
 echo “Hello World” > index.html
 {% endhighlight %}
 
 创建完毕后，我们来进行提交和推送，输入以下命令
 
-{% highlight bash %}
+{% highlight bash  %}
 git add --all
 git commit -m “初始提交”
 git push -u origin main

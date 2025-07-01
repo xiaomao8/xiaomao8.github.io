@@ -211,6 +211,18 @@
   object-fit: cover;
 }
 
+.author__avatar-wrapper {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* 修复 blockquote 引用中的文字自动斜体的问题 */
+blockquote {
+  font-style: normal !important;
+}
 
 
 
