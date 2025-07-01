@@ -12,7 +12,7 @@ toc_icon: "list-ul"
 comments: true     # ✅ 如果你开启了评论系统
 read_time: true
 header:
-  teaser: /assets/img/logo.png
+  teaser: /assets/img/1750987258082.png
 ---
 
 > ✨ 这篇文章我们来讲怎么配置Ruby和Jekyll环境

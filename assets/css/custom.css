@@ -204,4 +204,24 @@
   color: #444;
 }
 
+.u-photo {
+  width: 100px;
+  height: 100px; /* 👈 确保宽高一样才是圆 */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
