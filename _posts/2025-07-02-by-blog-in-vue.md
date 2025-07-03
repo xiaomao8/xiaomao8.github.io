@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Vue环境配置"
+title: "十分钟带你搞定Vue的环境配置"
 date: 2025-06-24 10:00:00 +0800
 author: default
 categories: [教程, Jekyll]
