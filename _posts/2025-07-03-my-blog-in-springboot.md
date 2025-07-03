@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "五分钟搞定Java的环境配置"
+title: "一站式SpringBoot环境配置指南（JDK+Gradle+IDEA）"
 date: 2025-06-24 10:00:00 +0800
 author: default
 categories: [教程, Jekyll]
@@ -15,7 +15,7 @@ header:
   teaser: /assets/img/logo.png    
 ---
 
->**五分钟带你搞定Java+SpringBoot+IDEA+SpringBoot的环境配置**
+>**半个小时带你搞定Java + SpringBoot + IDEA + Gradle的环境配置**
 
 ---
 
@@ -40,7 +40,7 @@ Java是一种**跨平台的，面向对象的编程语言**，由Sun Microsystem
 
 ### 2.配置全局环境变量
 
-安装完成后，会默认安装到C盘的`C:\Program Files\Java\jdk1.8.0_211`
+安装完成后，会默认安装到C盘的`C:\Program Files\Java\jdk-23`
 
 接下来点击我的电脑-属性-高级系统设置-选择环境变量
 
@@ -95,5 +95,55 @@ Java是一种**跨平台的，面向对象的编程语言**，由Sun Microsystem
 
 输入`javac -version`看看有没有显示版本
 
+然后我们接下来需要安装Java23
+
+[官方网站](https://www.oracle.com/java/technologies/javase/jdk23-archive-downloads.html)
+
+下载完成之后一路下一步就可以了
 
 如果都有显示代表我们第一步Java的环境配置成功了
+
+### 三、如何配置Gradle
+
+我们首先下载IDEA
+
+[官方网站](https://www.jetbrains.com/idea/)
+
+下载完成之后一路继续即可
+
+安装完成之后，我们现在开始下载Gradle
+
+>**注意，IDEA和他的JB全家桶是需要付费的开发工具，新用户可免费享受三十天，三十天一到就需要付费**
+
+
+
+我们现在来创捷一个SpringBoot项目
+
+![](/assets/img/1751537886304.png)
+
+选择SpringBoot,JDK选择我们刚刚下载的23,因为现在SpringBoot并不支持24及以上的版本
+
+Java我们选择23，然后开始构建项目，构建过程中他会自己下载
+
+进入这个页面之后我们选择JDBC API,我们目前是先构建一个示例项目，所以暂时不选其他的
+
+![](/assets/img/1751538130735.png)
+
+这里他自动下载会很慢，我们可以选择进入他[官方网站](https://services.gradle.org/distributions/)下载
+
+或者是使用复制网址放到迅雷里面下载
+
+ https://services.gradle.org/distributions/gradle-8.14.2-bin.zip
+
+下载完成之后放入这个文件夹里面
+
+`C:\Users\123\.gradle\wrapper\dists\gradle-8.14.2-bin\2pb3mgt1p815evrl3weanttgr`
+
+就是c盘，你的用户文件夹里面,这个一片乱码可能不一样，但是大概的路径就是这样
+
+接下来重启IDEA,然后等待一会
+
+![](/assets/img/61b1d43c0672fb078af99e73ba4267e.png)
+
+下面显示已完成而且上面绿了就代表我们已经配置成功了
+
