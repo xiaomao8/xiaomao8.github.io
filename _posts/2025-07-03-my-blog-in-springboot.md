@@ -52,11 +52,11 @@ Java是一种**跨平台的，面向对象的编程语言**，由Sun Microsystem
 
 点击新建之后页面应该是这样的，我们随便命名一个名称，然后找到刚刚下载JDK的路径
 
-在这里我命名的名称为Java_Home
+在这里我命名的名称为`Java_Home`
 
 ![](/assets/img/1751523205409.png)
 
-创建成功之后，我们还需要添加`Path`的配置，找到`Path`点击编辑,在Page里面新建环境变量
+创建成功之后，我们还需要添加`Path`的配置，找到`Path`点击编辑,在`Path`里面新建环境变量
 
 ![](/assets/img/1751523671714.jpg)
 
@@ -91,9 +91,9 @@ Java是一种**跨平台的，面向对象的编程语言**，由Sun Microsystem
 
 按键盘上的`Win + R` 两个一起按，再输入`Enter` 回车
 
-输入`java -version`看看有没有显示版本
+输入`java -version`看看有没有显示JRE的版本
 
-输入`javac -version`看看有没有显示版本
+输入`javac -version`看看有没有显示JDK的版本
 
 然后我们接下来需要安装Java23
 
