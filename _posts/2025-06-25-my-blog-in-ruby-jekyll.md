@@ -101,7 +101,7 @@ gem sources -l
 *** CURRENT SOURCES ***
 
 https://gems.ruby-china.com/
-{% endhighlight %}
+{% endhighlight %} 
 
 我们在ruby的步骤就全部完成了
 
